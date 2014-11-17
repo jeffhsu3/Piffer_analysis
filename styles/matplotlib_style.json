@@ -8,9 +8,5 @@
   "patch.edgecolor": "#EEEEEE",
   "axes.titlesize": 40,
   "svg.embed_char_paths": "path",
-  "font": {
-          'family': 'normal',
-          'size': 22
-         },  
   "axes.grid": true
 }
