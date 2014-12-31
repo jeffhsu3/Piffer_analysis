@@ -21,6 +21,21 @@ def get_nlines(fh):
     return(counter)
 
 
+def convert_vcf_code(genotype_string, reverse = False):
+    """ Convert vcf coded genotypes to numerics
+    """
+    try:
+        if reverse:
+            out = abs((int(genotype_string[0])- 1) +\
+                    (int(genotype_string[2])-1))
+            
+        else:
+            out = int(genotype_string[0]) +\
+                    int(genotype_string[2]) 
+    except IndexError:
+        out = np.nan
+    return(out)
+                                
 
 def get_pairwise_ld(chrom):
     """ Calculate population based ld of SNPs

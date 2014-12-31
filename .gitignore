@@ -1,4 +1,7 @@
 data/*
 scripts/freq.py
 piffers-freewas-extremely-beta-version/*
+*.swo
+*.swp
+#.swn
 
